@@ -14,9 +14,6 @@
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 ![Downloads](https://img.shields.io/github/downloads/dev-Vanilla/OmniFlow/total)
 ![GitHub Release](https://img.shields.io/github/v/release/dev-Vanilla/OmniFlow?style=flat)
-
-[![Build Status](https://github.com/dev-Vanilla/OmniFlow/actions/workflows/build.yml/badge.svg)](https://github.com/dev-Vanilla/OmniFlow/actions/workflows/build.yml)
-
 [![Language: Vue](https://img.shields.io/badge/-Vue-4FC08D?logo=vue.js&logoColor=white)](https://vuejs.org/)
 [![Language: Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white)](https://www.rust-lang.org/)
 
