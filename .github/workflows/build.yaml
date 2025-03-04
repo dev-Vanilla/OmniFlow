@@ -74,6 +74,10 @@ jobs:
         with:
           node-version: lts/*
 
+      - name: install pnpm
+        run: |
+          npm install -g pnpm
+
       - name: install Rust stable
         uses: dtolnay/rust-toolchain@stable
         with:
@@ -88,8 +92,23 @@ jobs:
         # webkitgtk 4.0 is for Tauri v1 - webkitgtk 4.1 is for Tauri v2.
         # You can remove the one that doesn't apply to your app to speed up the workflow a bit.
 
+      # 缓存 pnpm 依赖
+      - name: cache pnpm dependencies
+        uses: actions/cache@v3
+        id: pnpm-cache
+        with:
+          path: |
+            ~/.pnpm-store
+            C:\Users\runneradmin\.pnpm-store
+          key: pnpm-deps-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-deps-${{ runner.os }}-
+
+      # 如果缓存未命中，则安装依赖
       - name: install frontend dependencies
+        if: steps.pnpm-cache.outputs.cache-hit != 'true'
         run: pnpm install # change this to npm, pnpm or bun depending on which one you use.
+
 
       - uses: tauri-apps/tauri-action@v0
         env:
