@@ -12,18 +12,19 @@
 
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-![GitHub Releases](https://img.shields.io/github/downloads/dev-Vanilla/OmniFlow/total)
+![Downloads](https://img.shields.io/github/downloads/dev-Vanilla/OmniFlow/total)
 ![GitHub Release](https://img.shields.io/github/v/release/dev-Vanilla/OmniFlow?style=flat)
 
-[![GitHub Actions](https://github.com/dev-Vanilla/OmniFlow/workflows/CI/badge.svg)](https://github.com/dev-Vanilla/OmniFlow/actions)
+[![Build Status](https://github.com/dev-Vanilla/OmniFlow/actions/workflows/build.yml/badge.svg)](https://github.com/dev-Vanilla/OmniFlow/actions/workflows/build.yml)
 
 [![Language: Vue](https://img.shields.io/badge/-Vue-4FC08D?logo=vue.js&logoColor=white)](https://vuejs.org/)
 [![Language: Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white)](https://www.rust-lang.org/)
 
-
 </br>
 
-![Screenshot](public/screenshot.png)
+<div align="center">
+  <img src="public/screenshot.png" alt="Screenshot" style="border-radius: 8px;" />
+</div>
 
 </br>
 
@@ -71,8 +72,10 @@ OmniFLow is a feature-rich and user-friendly desktop frontend for AI conversatio
 
 Check out all available packages on the [GitHub Release Page](https://github.com/dev-Vanilla/OmniFlow/releases).
 
-[![Get it on GitHub](https://img.shields.io/badge/Get%20it%20on-GitHub-black?logo=github)](https://github.com/dev-Vanilla/OmniFlow/releases)
-
+[<img 
+    alt='Get it on GitHub'
+    src='public/get-it-on-github.png'
+    height="80" />](https://github.com/dev-Vanilla/OmniFlow/releases/latest)
 
 ### 📦️ Installation
 
